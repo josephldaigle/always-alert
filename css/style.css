@@ -1,0 +1,260 @@
+/* 
+    Created on : May 2nd 2016
+    Author     : Joseph Daigle
+*/
+
+/***** BASE STYLES *****/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font: 300 16px/1.4 Veranda, Helvetica, Arial, sans-serif;
+    color: #556670;
+    background: #fff none repeat scroll 0% 0%;
+    margin: 0;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1em; }
+h4 { font-size: .85em; }
+h5 { font-size: .75em; }
+h6 { font-size: .5em; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #326195;
+}
+
+h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+hr {
+    clear: both;
+}
+
+#header {
+    background: #fff;
+    max-height: 120px;
+    min-height: 60px;
+    border-bottom: 5px solid #3DAF2C;
+}
+
+#wrapper {
+    max-width: 1100px;
+    background: #fff;
+    margin: auto;
+    padding: 1.5em;
+}
+
+#wrapper p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3daf2c;
+}
+
+a:visited {
+    color: darkviolet;
+}
+
+.button a {
+    color: white;
+    padding: 1em;
+}
+
+i.fa {
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+
+#access-denied {
+    display: inline;
+}
+
+i.fa-times-circle {
+    color: red;
+}
+
+/***** PAGES *****/
+
+i.fa-exclamation-triangle {
+    color: #ffcc33;
+}
+
+/***** FORM *****/
+fieldset {
+    margin-top: 1em;
+    border-radius: 4px;
+    padding: 1em;
+    display: inline;
+}
+
+#student-tutorial-form {
+    clear: both;
+    display: inline;
+}
+
+legend {
+    font-weight: 600;
+}
+
+form label {
+    font-style: italic;
+    margin-right: 1em;
+}
+
+form hr {
+    margin: 1.5em 0em 1.5em 0em;
+}
+
+input[name=tutor] {
+    margin-top: .5em;
+}
+
+input:not(.button), select {
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+#wrapper form .form-row input[type="submit"] {
+    margin-left: 1em;
+}
+
+.form-row {
+    display: block;
+    clear: both;
+    margin: .5em 0 .3em;
+}
+
+.button {
+    margin-top: 1em;
+    padding: 0.3em 0;
+    min-width: 70px;
+    border: none;
+    background: #3daf2c;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[name="student-gcid"] {
+    margin-left: 1em;
+}
+
+textarea {
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: inset;
+    border-width: 2px;
+    border-color: inherit;
+    padding: .5em;
+}
+
+/***** APP SPECIFIC *****/
+
+#gsc-content>*:not(span) {
+    margin-top: 1em;
+}
+
+#gsc-content>form {
+    display: inline-block;
+}
+
+
+img.student-photo {
+    max-width: 110px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+img.student-photo+h2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul.student-snapshot {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    vertical-align: top;
+    margin: 0;
+    margin-left: 1em;
+}
+
+i.fa-book {
+    display: inline;
+}
+
+span.student-snapshot-label {
+    font-weight: 600;
+    display: inline-block;
+    min-width: 100px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr {background-color: #f2f2f2;}
+
+th {
+    background-color: #3DAF2C;
+    color: white;
+}
+
+table {
+    table-layout: fixed;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+caption {
+    text-align: left;
+}
+
+select[name="term"] {
+    margin-left: 1.5em;
+}
+
+.go {
+    color: #3daf2c;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.time-input {
+    max-width: 3em;
+}
+
+.date-input {
+    max-width: 3em;
+}
+
+input.date-input:last-of-type {
+    max-width: 5em;
+}
+
+.student-portrait {
+    float: right;
+}
+
+#gsc-content>div>span:first-of-type {
+    display: inline;
+    float: left;
+    margin-bottom: 4em;
+}
+
+/***** FACULTY COURSE VIEW SPECIFIC *****/
+
+table[name="enrolled-courses"] th {
+    min-width: 8.5em;
+}
